@@ -1,9 +1,11 @@
 // import ControlPanel from './controls';
+import ControlPanel from './controls';
 import NameBadge from './name-badge';
 
 const Application = () => (
   <main className="application">
-    <NameBadge />
+    <NameBadge name='Pritam'/>
+    <ControlPanel name='Test' onChange={()=>console.log("ControlPanel")}/>
   </main>
 );
 
